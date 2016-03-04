@@ -45,10 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BatteryLife.cs" />
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\TitleScreen.cs" />
      <Compile Include="Assets\Scripts\UI_Buttons.cs" />
+     <Compile Include="Assets\Scripts\WireStats.cs" />
      <None Include="Assets\Animations\Animations\_.txt" />
      <None Include="Assets\Sounds\Audio\_.txt" />
      <None Include="Assets\UI\_.txt" />
