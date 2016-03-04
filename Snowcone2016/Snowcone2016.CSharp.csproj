@@ -67,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\HeroMovement.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\TitleScreen.cs" />
+    <Compile Include="Assets\Scripts\UI_Buttons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Animations\_.txt" />

@@ -19,7 +19,7 @@ public class HeroMovement : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
         {
@@ -27,32 +27,38 @@ public class HeroMovement : MonoBehaviour {
             heroRidigBody2d.velocity = new Vector2(0, 0);
             translateMainCameraOnAxis(new Vector3(0,0));
         }
-        #region Diagonnales
-        /*
-        if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
-        {
-            heroRidigBody2d.velocity = new Vector2(-10,10);
-        }
-
-        if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == -1)
-        {
-            heroRidigBody2d.velocity = new Vector2(-10,-10);
-        }
-        if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == -1)
-        {
-            heroRidigBody2d.velocity = new Vector2(10,-10);
-        }
-
-        if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == 1)
-        {
-            heroRidigBody2d.velocity = new Vector2(10,10);
-        }*/
-        #endregion
 
         if (!heroAnimator.GetBool("Dead"))
         {
+
+            #region Diagonnales
+            if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
+            {
+                heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, 0);
+                translateMainCameraOnAxis(new Vector3(-1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime));
+            }
+
+            else if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == -1)
+            {
+                heroRidigBody2d.velocity = new Vector2(0, -1 * speed * Time.deltaTime);
+               // translateMainCameraOnAxis(new Vector3(0, -1 * speed * Time.deltaTime));
+            }
+            else if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == -1)
+            {
+                heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, 0);
+                translateMainCameraOnAxis(new Vector3(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime));
+            }
+
+            else if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == 1)
+            {
+                heroRidigBody2d.velocity = new Vector2(0, 1 * speed * Time.deltaTime);
+                //translateMainCameraOnAxis(new Vector3(0, 1 * speed * Time.deltaTime));
+            }
+            #endregion
+
+        
             
-            if (Input.GetAxisRaw("Horizontal") == 1)
+            else if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 //right
 
@@ -117,6 +123,6 @@ public class HeroMovement : MonoBehaviour {
 
   void translateMainCameraOnAxis(Vector3 positionVecteur)
     {
-        Camera.main.transform.position +=positionVecteur*Time.deltaTime;
+        Camera.main.transform.Translate(positionVecteur*Time.deltaTime);
     }
 }
