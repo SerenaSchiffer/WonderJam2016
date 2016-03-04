@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\TitleScreen.cs" />
     <Compile Include="Assets\Scripts\UI_Buttons.cs" />
+    <Compile Include="Assets\Scripts\WireStats.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Animations\_.txt" />
