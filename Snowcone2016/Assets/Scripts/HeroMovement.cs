@@ -15,6 +15,7 @@ public class HeroMovement : MonoBehaviour {
         heroAnimator = gameObject.GetComponent<Animator>();
         heroRidigBody2d = gameObject.GetComponent<Rigidbody2D>();
         ActualVecteur = gameObject.transform.localScale;
+        lastTriggerName = "LookLeft";
 
     }
 	
@@ -32,10 +33,10 @@ public class HeroMovement : MonoBehaviour {
         {
 
             #region Diagonnales
-            if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
+            /*if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
             {
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, 0);
-                translateMainCameraOnAxis(new Vector3(-1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime));
+                translateMainCameraOnAxis(new Vector3(-0.5f * speed * Time.deltaTime, -0.25f * speed * Time.deltaTime));
             }
 
             else if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == -1)
@@ -46,19 +47,19 @@ public class HeroMovement : MonoBehaviour {
             else if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == -1)
             {
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, 0);
-                translateMainCameraOnAxis(new Vector3(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime));
+                translateMainCameraOnAxis(new Vector3(0.5f * speed * Time.deltaTime, 0.25f * speed * Time.deltaTime));
             }
 
             else if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == 1)
             {
                 heroRidigBody2d.velocity = new Vector2(0, 1 * speed * Time.deltaTime);
                 //translateMainCameraOnAxis(new Vector3(0, 1 * speed * Time.deltaTime));
-            }
+            }*/
             #endregion
 
         
             
-            else if (Input.GetAxisRaw("Horizontal") == 1)
+            if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 //right
 
