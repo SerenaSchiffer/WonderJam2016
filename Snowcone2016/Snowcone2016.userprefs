@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PushBlock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HoleScript.cs">
     <Files>
       <File FileName="Assets\Scripts\TitleScreen.cs" Line="23" Column="5" />
       <File FileName="Assets\Scripts\UI_Buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BatteryLife.cs" Line="26" Column="30" />
-      <File FileName="Assets\Scripts\PushBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PushBlock.cs" Line="28" Column="3" />
+      <File FileName="Assets\Scripts\HeroMovement.cs" Line="32" Column="10" />
+      <File FileName="Assets\Scripts\HoleScript.cs" Line="15" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
