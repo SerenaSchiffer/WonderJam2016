@@ -28,6 +28,6 @@ public class Magnet : MonoBehaviour {
 
     public void ActivateMagnet()
     {
-
+        isActive = true;
     }
 }
