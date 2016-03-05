@@ -20,7 +20,7 @@ public class WireTrigger : MonoBehaviour {
     {
         if(aLineRenderer != null)
         {
-            aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,-10));
+            aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,-8));
             //aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -5));
             //aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered2.transform.position.x, lastColliderEntered2.transform.position.y, -5));
         }
@@ -112,7 +112,7 @@ public class WireTrigger : MonoBehaviour {
                 aWire = Instantiate(Resources.Load("Wire") as GameObject);
                 aLineRenderer = aWire.GetComponent<LineRenderer>();
                 aLineRenderer.SetWidth(0.001f, 0.001f);
-                aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered.transform.position.x, lastColliderEntered.transform.position.y,-10));
+                aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered.transform.position.x, lastColliderEntered.transform.position.y,-8));
                 lastColliderEntered.GetComponent<WireStats>().setPickedUp(true);
                 gameObject.GetComponent<WireStats>().SetCurrentWire(lastColliderEntered.GetComponent<WireStats>().GetCurrentWire());
                 ChangeTypeOfLine();
