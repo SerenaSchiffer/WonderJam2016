@@ -27,11 +27,13 @@ public class ActivateTile : MonoBehaviour {
             if(isActivate)
             {
                 tileSprite.color = Color.red;
+				GetComponentInChildren<Light> ().color = new Color(0.8f,0.1f,0.1f);
                 gateToOpen.VerifyPuzzle();
             }
             else
             {
                 tileSprite.color = Color.blue;
+				GetComponentInChildren<Light> ().color = Color.blue;
             }
 
         }
