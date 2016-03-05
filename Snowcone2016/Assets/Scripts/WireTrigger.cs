@@ -12,25 +12,51 @@ public class WireTrigger : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         if (isInZone && lastColliderEntered != null)
         {
+           
             if (lastColliderEntered.tag == "WireZone")
             {
-                if (lastColliderEntered.GetComponent<WireStats>().isAWire && !gameObject.GetComponent<WireStats>().isAWire)
+                pickUpWire();
+            }
+            else if (lastColliderEntered.tag == "PlugZone")
+            {
+                PlugOnWire();
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
-                    {
-                    gameObject.GetComponent<WireStats>().setCurrentWire(lastColliderEntered.GetComponent<WireStats>().getCurrentWire());
-                    }
+                    gameObject.GetComponent<WireStats>().SetCurrentWire(Wires.noWire);
                 }
             }
         }
-        else
+    }
+
+    void pickUpWire()
+    {
+        if (lastColliderEntered.GetComponent<WireStats>().isAWire && !gameObject.GetComponent<WireStats>().isAWire)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                gameObject.GetComponent<WireStats>().setCurrentWire(Wires.noWire);
+                gameObject.GetComponent<WireStats>().SetCurrentWire(lastColliderEntered.GetComponent<WireStats>().GetCurrentWire());
+            }
+        }
+    }
+
+    void PlugOnWire()
+    {
+        if (lastColliderEntered.GetComponent<WireConnectionEvent>() as WireConnectionEvent != null)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (gameObject.GetComponent<WireStats>().currentWire == lastColliderEntered.GetComponent<WireConnectionEvent>().typeOfConnection)
+                {
+                    lastColliderEntered.GetComponent<WireConnectionEvent>().SetConnected(true);
+                    gameObject.GetComponent<WireStats>().currentWire = Wires.noWire;
+                }
             }
         }
     }
@@ -42,7 +68,7 @@ public class WireTrigger : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.tag == "WireZone")
+        if (col.tag == "WireZone" || col.tag == "PlugZone")
         {
             lastColliderEntered = col;
         }
