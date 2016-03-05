@@ -14,31 +14,36 @@ public class WireTrigger : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (isInZone && lastColliderEntered != null)
+        if(!isInZone)
         {
-           
+            lastColliderEntered = null;
+        }
+        if (lastColliderEntered != null)
+        {
+            Debug.Log("Je rentreeee");
             if (lastColliderEntered.tag == "WireZone")
             {
+                Debug.Log("Je Pick up");
                 PickUpWire();
             }
             else if (lastColliderEntered.tag == "PlugZone")
             {
+                Debug.Log("Je PLug");
                 PlugOnWire();
             }
-            else
-            {
-                DropWire();
-            }
+            
         }
+        DropWire();
     }
 
     void DropWire()
     {
-        lastColliderEntered.GetComponent<WireStats>().setPickedUp(false);
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             gameObject.GetComponent<WireStats>().SetCurrentWire(Wires.noWire);
         }
+        lastColliderEntered.GetComponent<WireStats>().setPickedUp(false);
     }
 
     void PickUpWire()
