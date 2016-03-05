@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Snowcone2016/Assets/Sprites/PSD_Emilie/Mur et sol.psd.meta
+guid: 41d6a12bacec1ce4fad814770a29a42b
+timeCreated: 1457137894
+=======
 guid: 64cc9a211b7e00144b3e1962a741258f
 timeCreated: 1457137575
+>>>>>>> db3a0d4a120ffc12cdc0f7dff66f4592800e81a1:Snowcone2016/Assets/Sprites/PSD_Emilie/Mur et sol.psd.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

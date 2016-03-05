@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Snowcone2016/Assets/Sprites/PSD_Emilie/art_Blank.psd.meta
+guid: f6a22426dc6631c4f8acc830cc2cf71f
+timeCreated: 1457137907
+=======
 guid: c7bdce69ac8c047479b73179728e31a6
 timeCreated: 1457137583
+>>>>>>> db3a0d4a120ffc12cdc0f7dff66f4592800e81a1:Snowcone2016/Assets/Sprites/PSD_Emilie/art_Blank.psd.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
