@@ -3,13 +3,14 @@ using System.Collections;
 
 public class HoleScript : MonoBehaviour {
 
+	private bool isFilled;
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Destroy (other.gameObject);
-	}
-
-	void OnTriggerStay2D(Collider2D other)
-	{
-		Destroy (other.gameObject);
+		if (!isFilled) {
+			if(other.gameObject.tag == "block")
+				isFilled = true;
+			Destroy (other.gameObject);
+		}
 	}
 }
