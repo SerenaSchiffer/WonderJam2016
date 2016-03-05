@@ -66,12 +66,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\ActivateTile.cs" />
->>>>>>> 3bac3c45cd85fe622266ec7d6edad019b86d79f5
     <Compile Include="Assets\Scripts\BatteryLife.cs" />
+    <Compile Include="Assets\Scripts\CameraZoom.cs" />
+    <Compile Include="Assets\Scripts\ElementBehavior.cs" />
     <Compile Include="Assets\Scripts\HeroMovement.cs" />
+    <Compile Include="Assets\Scripts\HoleScript.cs" />
     <Compile Include="Assets\Scripts\OpenGate.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PushBlock.cs" />
