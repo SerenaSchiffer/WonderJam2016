@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Snowcone2016/Assets/Sprites/Temporary/square.png.meta
 guid: 6296c6434c00428469d303ded26298b2
 timeCreated: 1457147310
+=======
+guid: 8b2721f2bca32b74d9ac02048986bff0
+timeCreated: 1457146906
+>>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556:Snowcone2016/Assets/Sprites/Temporary/square.png.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

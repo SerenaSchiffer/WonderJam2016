@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Snowcone2016/Assets/Sprites/Temporary/blank copy.jpg.meta
 guid: af23566f0c7cbdf4e8f7a6f86fe8c72f
 timeCreated: 1457147313
+=======
+guid: 9edb4c0bc9457174e9c1997e1b5c399c
+timeCreated: 1457146908
+>>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556:Snowcone2016/Assets/Sprites/Temporary/blank copy.jpg.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
