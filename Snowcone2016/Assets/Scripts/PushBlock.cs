@@ -31,16 +31,16 @@ public class PushBlock : MonoBehaviour {
 	{
 		if (hor != 0) {
 			if (hor == 1)
-				gameObject.transform.position = new Vector2 (transform.position.x + 0.5f, transform.position.y + 0.25f);
+				transform.Translate(new Vector2 (0.5f, 0.25f));
 			else
-				gameObject.transform.position = new Vector2 (transform.position.x - 0.5f, transform.position.y - 0.25f);
+				transform.Translate(new Vector2 (-0.5f, -0.25f));
 		}
 		else 
 		{
-			if (ver == 1) 
-				gameObject.transform.position = new Vector2 (transform.position.x - 0.5f, transform.position.y + 0.25f);
+			if (ver == 1)
+				transform.Translate (new Vector2 (-0.5f, 0.25f));
 			else
-				gameObject.transform.position = new Vector2 (transform.position.x + 0.5f, transform.position.y - 0.25f);
+				transform.Translate (new Vector2 (0.5f, -0.25f));
 		}
 	}
 }
