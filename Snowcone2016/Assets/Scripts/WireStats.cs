@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public enum Wires
 {
@@ -12,14 +13,26 @@ public enum Wires
 }
 
 
+
+
 public class WireStats : MonoBehaviour {
 
     public bool isAWire;
     public bool hasBeenPickedUp;
     public Wires currentWire;
 
-	// Use this for initialization
-	void Start () {
+    public Dictionary<string, Color> dicto;
+
+    // Use this for initialization
+    void Start () {
+        dicto = new Dictionary<string, Color>();
+        dicto.Add("noWire", Color.clear);
+        dicto.Add("Red", Color.red);
+        dicto.Add("Blue", Color.blue);
+        dicto.Add("Yellow", Color.yellow);
+        dicto.Add("Black", Color.black);
+        dicto.Add("Violet", Color.magenta);
+
         if (!isAWire)
         {
             currentWire = Wires.noWire;
@@ -55,5 +68,10 @@ public class WireStats : MonoBehaviour {
     public bool GetIsPickedUp()
     {
         return hasBeenPickedUp;
+    }
+
+    public Dictionary<string, Color> GetDictionnary()
+    {
+        return dicto;
     }
 }
