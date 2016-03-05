@@ -14,11 +14,11 @@ public class ElementBehavior : MonoBehaviour {
 	void Update () {
 	if(character.GetComponent<WireStats>().currentWire == WirePermitted && gameObject.GetComponent<PolygonCollider2D>().isTrigger == false)
         {
-
+            gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         }
-        else if(gameObject.GetComponent<PolygonCollider2D>().isTrigger == true)
+        else if(gameObject.GetComponent<PolygonCollider2D>().isTrigger == true && character.GetComponent<WireStats>().currentWire != WirePermitted)
         {
-
+            gameObject.GetComponent<PolygonCollider2D>().isTrigger = false;
         }
 	}
 }
