@@ -72,9 +72,11 @@
     <Compile Include="Assets\Scripts\BatteryLife.cs" />
     <Compile Include="Assets\Scripts\HeroMovement.cs" />
     <Compile Include="Assets\Scripts\HoleScript.cs" />
+    <Compile Include="Assets\Scripts\Magnet.cs" />
     <Compile Include="Assets\Scripts\OpenGate.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PushBlock.cs" />
+    <Compile Include="Assets\Scripts\StopAtMagnet.cs" />
     <Compile Include="Assets\Scripts\TitleScreen.cs" />
     <Compile Include="Assets\Scripts\UI_Buttons.cs" />
     <Compile Include="Assets\Scripts\WireConnectionEvent.cs" />
