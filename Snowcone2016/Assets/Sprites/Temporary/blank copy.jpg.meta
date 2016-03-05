@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: af23566f0c7cbdf4e8f7a6f86fe8c72f
+timeCreated: 1457150142
+licenseType: Free
+=======
+<<<<<<< HEAD
+guid: 1dbce0e77fca1bb409daa325e79edb24
+timeCreated: 1457147566
+licenseType: Free
+=======
+guid: af23566f0c7cbdf4e8f7a6f86fe8c72f
+>>>>>>> df655153b4a6065eb06b13017bb23f473980cf0c
+>>>>>>> ab0b63a92f81d2acdd606d664121072efb4587c5
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -15,20 +27,40 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
+<<<<<<< HEAD
+    heightScale: 0.25
+=======
+<<<<<<< HEAD
+    heightScale: 0.25
+=======
     heightScale: .25
+>>>>>>> df655153b4a6065eb06b13017bb23f473980cf0c
+>>>>>>> ab0b63a92f81d2acdd606d664121072efb4587c5
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 7
+=======
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 7
+=======
   cubemapConvolutionSteps: 8
+>>>>>>> df655153b4a6065eb06b13017bb23f473980cf0c
+>>>>>>> ab0b63a92f81d2acdd606d664121072efb4587c5
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
+    aniso: -1
+=======
     aniso: 16
+>>>>>>> ab0b63a92f81d2acdd606d664121072efb4587c5
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -40,7 +72,15 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
+<<<<<<< HEAD
+  spritePivot: {x: 0.5, y: 0.5}
+=======
+<<<<<<< HEAD
+  spritePivot: {x: 0.5, y: 0.5}
+=======
   spritePivot: {x: .5, y: .5}
+>>>>>>> df655153b4a6065eb06b13017bb23f473980cf0c
+>>>>>>> ab0b63a92f81d2acdd606d664121072efb4587c5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -48,6 +88,14 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
+<<<<<<< HEAD
+    outline: []
+=======
+<<<<<<< HEAD
+    outline: []
+=======
+>>>>>>> df655153b4a6065eb06b13017bb23f473980cf0c
+>>>>>>> ab0b63a92f81d2acdd606d664121072efb4587c5
   spritePackingTag: 
   userData: 
   assetBundleName: 
