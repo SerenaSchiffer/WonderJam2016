@@ -125,7 +125,7 @@ public class HeroMovement : MonoBehaviour {
     }
     void translateMainCameraOnAxis(float x,float y)
     {
-        Camera.main.transform.position = new Vector3(x, y,-1);
+        Camera.main.transform.position = new Vector3(x, y,-10);
     }
 
     //void translateMainCameraOnAxis(Vector3 positionVecteur)
