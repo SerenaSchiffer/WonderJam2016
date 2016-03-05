@@ -1,17 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HeroMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WireTrigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\ActivateTile.cs" Line="23" Column="48" />
+      <File FileName="Assets\Scripts\ActivateTile.cs" Line="26" Column="31" />
       <File FileName="Assets\Scripts\TitleScreen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\UI_Buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BatteryLife.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PushBlock.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\HeroMovement.cs" Line="32" Column="10" />
+      <File FileName="Assets\Scripts\PushBlock.cs" Line="34" Column="12" />
+      <File FileName="Assets\Scripts\HeroMovement.cs" Line="119" Column="52" />
       <File FileName="Assets\Scripts\HoleScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Canon.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\OrderInLayer.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CloseDrain.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\OpenGate.cs" Line="37" Column="78" />
+      <File FileName="Assets\Scripts\WireTrigger.cs" Line="76" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
