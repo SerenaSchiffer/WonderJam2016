@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Snowcone2016/Assets/Sprites/PSD_Emilie/art_essai.psd.meta
 guid: 00f992f96a246004792c0bb169a117d6
 timeCreated: 1457137891
+=======
+guid: de3b7b77056e4574abdb0c16a0f188e6
+timeCreated: 1457137602
+>>>>>>> db3a0d4a120ffc12cdc0f7dff66f4592800e81a1:Snowcone2016/Assets/Sprites/PSD_Emilie/art_essai.psd.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
