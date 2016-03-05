@@ -5,7 +5,7 @@ public class CanonProjectile : MonoBehaviour {
 
 	public GameObject target = null;
 
-	private int ttl = 120;
+	private int ttl = 600;
 
 	void FixedUpdate()
 	{
