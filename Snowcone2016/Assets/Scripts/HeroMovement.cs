@@ -6,17 +6,21 @@ public class HeroMovement : MonoBehaviour {
     Rigidbody2D heroRidigBody2d;
     public float speed = 4;
     private Vector3 ActualVecteur;
-
     private string lastTriggerName;
     private Animator heroAnimator;
 
+
+	public Sprite backSprite;
+	private Sprite frontSprite;
+	private SpriteRenderer mySR;
 	// Use this for initialization
 	void Start () {
         heroAnimator = gameObject.GetComponent<Animator>();
         heroRidigBody2d = gameObject.GetComponent<Rigidbody2D>();
         ActualVecteur = gameObject.transform.localScale;
         lastTriggerName = "LookLeft";
-
+		mySR = GetComponent<SpriteRenderer> ();
+		frontSprite = mySR.sprite;
     }
 	
 	// Update is called once per frame
@@ -73,6 +77,7 @@ public class HeroMovement : MonoBehaviour {
                 gameObject.transform.localScale = new Vector3((ActualVecteur.x) * -1, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime);
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
+				mySR.sprite = backSprite;
             }
 
             else if (Input.GetAxisRaw("Horizontal") == -1)
@@ -88,6 +93,7 @@ public class HeroMovement : MonoBehaviour {
                 gameObject.transform.localScale = new Vector3(ActualVecteur.x, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime);
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
+				mySR.sprite = frontSprite;
             }
 
             else if (Input.GetAxisRaw("Vertical") == 1)
@@ -96,6 +102,7 @@ public class HeroMovement : MonoBehaviour {
                 {
                     heroAnimator.ResetTrigger(lastTriggerName);
                 }
+
                 //left
                 heroAnimator.SetTrigger("LookLeft");
                 lastTriggerName = "LookLeft";
@@ -103,6 +110,7 @@ public class HeroMovement : MonoBehaviour {
                 gameObject.transform.localScale = new Vector3(ActualVecteur.x, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime);
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
+				mySR.sprite = backSprite;
 
             }
 
@@ -119,6 +127,7 @@ public class HeroMovement : MonoBehaviour {
                 gameObject.transform.localScale = new Vector3((ActualVecteur.x) * -1, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime);
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
+				mySR.sprite = frontSprite;
             }
 
         }
