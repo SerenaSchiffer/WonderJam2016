@@ -45,11 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ActivateMagnet.cs" />
+     <Compile Include="Assets\Scripts\ActivateSwitch.cs" />
      <Compile Include="Assets\Scripts\ActivateTile.cs" />
      <Compile Include="Assets\Scripts\BatteryLife.cs" />
      <Compile Include="Assets\Scripts\CameraZoom.cs" />
      <Compile Include="Assets\Scripts\Canon.cs" />
      <Compile Include="Assets\Scripts\CanonProjectile.cs" />
+     <Compile Include="Assets\Scripts\CloseDrain.cs" />
      <Compile Include="Assets\Scripts\ElementBehavior.cs" />
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
      <Compile Include="Assets\Scripts\HoleScript.cs" />
@@ -60,6 +63,7 @@
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PushBlock.cs" />
      <Compile Include="Assets\Scripts\StopAtMagnet.cs" />
+     <Compile Include="Assets\Scripts\StopSmoke.cs" />
      <Compile Include="Assets\Scripts\TitleScreen.cs" />
      <Compile Include="Assets\Scripts\UI_Buttons.cs" />
      <Compile Include="Assets\Scripts\WireConnectionEvent.cs" />
