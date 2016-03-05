@@ -5,7 +5,7 @@ public class ActivateSwitch : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    //Activate switch
+        gameObject.transform.parent.GetChild(1).GetComponent<Switch>().ActivateSwitch();
 	}
 	
 	// Update is called once per frame
