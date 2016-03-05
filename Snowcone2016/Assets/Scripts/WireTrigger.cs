@@ -157,7 +157,10 @@ public class WireTrigger : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        isInZone = true;
+        if (col.gameObject.tag == "WireZone" || col.gameObject.tag == "PlugZone")
+        {
+            isInZone = true;
+        }
     }
 
     void OnTriggerStay2D(Collider2D col)
@@ -170,6 +173,9 @@ public class WireTrigger : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D col)
     {
-        isInZone = false;
+        if (col.gameObject.tag == "WireZone" || col.gameObject.tag == "PlugZone")
+        {
+            isInZone = false;
+        }
     }
 }
