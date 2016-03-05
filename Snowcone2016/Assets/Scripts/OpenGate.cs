@@ -5,7 +5,8 @@ public class OpenGate : MonoBehaviour {
 
     GameObject[] tableTile;
     bool puzzleCompleted;
-    public Sprite OpenDoor;
+    public Sprite OpenDoorDroite;
+    public Sprite OpenDoorFondDroite;
     // Use this for initialization
     void Start () {
         tableTile = GameObject.FindGameObjectsWithTag("ActivableTile");
@@ -31,8 +32,9 @@ public class OpenGate : MonoBehaviour {
         if(puzzleCompleted)
         {
             //ADD OPEN GATE
-            gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = OpenDoor;
-            gameObject.transform.GetChild(0).GetChild(1).GetComponent<SpriteRenderer>().sprite = OpenDoor;
+            gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = OpenDoorDroite;
+            gameObject.transform.GetChild(0).GetChild(1).GetComponent<SpriteRenderer>().sprite = OpenDoorFondDroite;
+            Destroy(gameObject.transform.GetChild(0).GetChild(2).gameObject);
         }
     }
 }

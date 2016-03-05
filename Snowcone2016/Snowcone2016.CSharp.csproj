@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Magnet.cs" />
     <Compile Include="Assets\Scripts\OpenGate.cs" />
     <Compile Include="Assets\Scripts\OrderInLayer.cs" />
+    <Compile Include="Assets\Scripts\OrderInLayerStatic.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PushBlock.cs" />
     <Compile Include="Assets\Scripts\StopAtMagnet.cs" />
