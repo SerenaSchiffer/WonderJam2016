@@ -1,17 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Snowcone2016/Assets/Sprites/Temporary/ezimba.gif.meta
-guid: 8bb8beed3a3e95c43b073eb72c438d39
-timeCreated: 1457147570
-=======
-<<<<<<< HEAD:Snowcone2016/Assets/Sprites/Temporary/ezimba.gif.meta
-guid: 0554db02c919cce4db6e48c1542bac84
-timeCreated: 1457147306
-=======
-guid: 5329dac0c769ce84daacb57dfd188516
-timeCreated: 1457146904
->>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556:Snowcone2016/Assets/Sprites/Temporary/ezimba.gif.meta
->>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3:Snowcone2016/Assets/Sprites/Temporary/ezimba.gif.meta
-licenseType: Free
+guid: af23566f0c7cbdf4e8f7a6f86fe8c72f
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -27,20 +15,20 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
+  cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -52,7 +40,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -60,6 +48,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

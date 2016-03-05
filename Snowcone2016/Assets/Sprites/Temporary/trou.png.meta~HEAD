@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Snowcone2016/Assets/Sprites/Temporary/trou.png.meta
-guid: e5a4efd30c8d6974fa74cf5679208e2e
-timeCreated: 1457147314
-=======
-guid: 85e5a851bafa0cc4b95cd1bdd2739b44
-timeCreated: 1457146906
->>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556:Snowcone2016/Assets/Sprites/Temporary/trou.png.meta
+guid: 29661f4c8ec41e34ebc72596951dfda7
+timeCreated: 1457147569
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -22,13 +17,13 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
+  cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
@@ -47,7 +42,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -55,6 +50,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
