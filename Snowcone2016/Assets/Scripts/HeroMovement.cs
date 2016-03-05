@@ -15,6 +15,7 @@ public class HeroMovement : MonoBehaviour {
         heroAnimator = gameObject.GetComponent<Animator>();
         heroRidigBody2d = gameObject.GetComponent<Rigidbody2D>();
         ActualVecteur = gameObject.transform.localScale;
+        lastTriggerName = "LookLeft";
 
     }
 	
@@ -25,17 +26,16 @@ public class HeroMovement : MonoBehaviour {
         {
             heroAnimator.SetBool("Moving", false);
             heroRidigBody2d.velocity = new Vector2(0, 0);
-            translateMainCameraOnAxis(new Vector3(0,0));
         }
 
         if (!heroAnimator.GetBool("Dead"))
         {
 
             #region Diagonnales
-            if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
+            /*if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
             {
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, 0);
-                translateMainCameraOnAxis(new Vector3(-1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime));
+                translateMainCameraOnAxis(new Vector3(-0.5f * speed * Time.deltaTime, -0.25f * speed * Time.deltaTime));
             }
 
             else if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == -1)
@@ -46,19 +46,19 @@ public class HeroMovement : MonoBehaviour {
             else if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == -1)
             {
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, 0);
-                translateMainCameraOnAxis(new Vector3(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime));
+                translateMainCameraOnAxis(new Vector3(0.5f * speed * Time.deltaTime, 0.25f * speed * Time.deltaTime));
             }
 
             else if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == 1)
             {
                 heroRidigBody2d.velocity = new Vector2(0, 1 * speed * Time.deltaTime);
                 //translateMainCameraOnAxis(new Vector3(0, 1 * speed * Time.deltaTime));
-            }
+            }*/
             #endregion
 
         
             
-            else if (Input.GetAxisRaw("Horizontal") == 1)
+            if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 //right
 
@@ -72,7 +72,7 @@ public class HeroMovement : MonoBehaviour {
                 heroAnimator.SetBool("Moving", true);
                 gameObject.transform.localScale = new Vector3((ActualVecteur.x) * -1, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime);
-                translateMainCameraOnAxis(new Vector3(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime));
+                translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
             }
 
             else if (Input.GetAxisRaw("Horizontal") == -1)
@@ -87,7 +87,7 @@ public class HeroMovement : MonoBehaviour {
                 heroAnimator.SetBool("Moving", true);
                 gameObject.transform.localScale = new Vector3(ActualVecteur.x, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime);
-                translateMainCameraOnAxis(new Vector3(-1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime));
+                translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
             }
 
             else if (Input.GetAxisRaw("Vertical") == 1)
@@ -102,6 +102,8 @@ public class HeroMovement : MonoBehaviour {
                 heroAnimator.SetBool("Moving", true);
                 gameObject.transform.localScale = new Vector3(ActualVecteur.x, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime);
+                translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
+
             }
 
             else if (Input.GetAxisRaw("Vertical") == -1)
@@ -116,13 +118,18 @@ public class HeroMovement : MonoBehaviour {
                 heroAnimator.SetBool("Moving", true);
                 gameObject.transform.localScale = new Vector3((ActualVecteur.x) * -1, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, -0.5f * speed * Time.deltaTime);
+                translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
             }
 
         }
     }
-
-  void translateMainCameraOnAxis(Vector3 positionVecteur)
+    void translateMainCameraOnAxis(float x,float y)
     {
-        Camera.main.transform.Translate(positionVecteur*Time.deltaTime);
+        Camera.main.transform.position = new Vector3(x, y,-1);
     }
+
+    //void translateMainCameraOnAxis(Vector3 positionVecteur)
+    //{
+    //    Camera.main.transform.position += positionVecteur*Time.deltaTime;
+    //}
 }
