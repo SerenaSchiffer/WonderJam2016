@@ -51,4 +51,9 @@ public class WireStats : MonoBehaviour {
     {
         hasBeenPickedUp = isIt;
     }
+
+    public bool GetIsPickedUp()
+    {
+        return hasBeenPickedUp;
+    }
 }

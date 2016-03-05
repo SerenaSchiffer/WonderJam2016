@@ -19,7 +19,7 @@ public class WireTrigger : MonoBehaviour {
            
             if (lastColliderEntered.tag == "WireZone")
             {
-                pickUpWire();
+                PickUpWire();
             }
             else if (lastColliderEntered.tag == "PlugZone")
             {
@@ -27,20 +27,27 @@ public class WireTrigger : MonoBehaviour {
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    gameObject.GetComponent<WireStats>().SetCurrentWire(Wires.noWire);
-                }
+                DropWire();
             }
         }
     }
 
-    void pickUpWire()
+    void DropWire()
     {
-        if (lastColliderEntered.GetComponent<WireStats>().isAWire && !gameObject.GetComponent<WireStats>().isAWire)
+        lastColliderEntered.GetComponent<WireStats>().setPickedUp(false);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            gameObject.GetComponent<WireStats>().SetCurrentWire(Wires.noWire);
+        }
+    }
+
+    void PickUpWire()
+    {
+        if (lastColliderEntered.GetComponent<WireStats>().isAWire && !gameObject.GetComponent<WireStats>().isAWire && lastColliderEntered.GetComponent<WireStats>().hasBeenPickedUp == false)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                lastColliderEntered.GetComponent<WireStats>().setPickedUp(true);
                 gameObject.GetComponent<WireStats>().SetCurrentWire(lastColliderEntered.GetComponent<WireStats>().GetCurrentWire());
             }
         }

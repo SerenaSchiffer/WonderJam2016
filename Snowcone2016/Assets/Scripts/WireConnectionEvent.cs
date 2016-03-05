@@ -19,6 +19,10 @@ public class WireConnectionEvent : MonoBehaviour {
     public void SetConnected(bool isIt)
     {
         connected = isIt;
+        if(connected)
+        {
+            ActivateChildObjects();
+        }
     }
 
     public bool GetConnected()
@@ -29,5 +33,10 @@ public class WireConnectionEvent : MonoBehaviour {
     public Wires GetTypeOfConnection()
     {
         return typeOfConnection;
+    }
+
+    private void ActivateChildObjects()
+    {
+        gameObject.SetActiveRecursively(true);
     }
 }
