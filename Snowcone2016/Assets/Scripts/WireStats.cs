@@ -14,23 +14,30 @@ public enum Wires
 
 public class WireStats : MonoBehaviour {
 
-    Wires currentWire;
+    public bool isAWire;
+    public Wires currentWire;
 
 	// Use this for initialization
 	void Start () {
-        currentWire = Wires.noWire;
+        if (!isAWire)
+        {
+            currentWire = Wires.noWire;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	}
 
-    void setCurrentWire(Wires newCurrentWire)
+    public void setCurrentWire(Wires newCurrentWire)
     {
-        currentWire = newCurrentWire;
+        if (!isAWire)
+        {
+            currentWire = newCurrentWire;
+        }
     }
 
-    Wires getCurrentWire()
+    public Wires getCurrentWire()
     {
         return currentWire;
     }

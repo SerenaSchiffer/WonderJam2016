@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\TitleScreen.cs" />
     <Compile Include="Assets\Scripts\UI_Buttons.cs" />
     <Compile Include="Assets\Scripts\WireStats.cs" />
+    <Compile Include="Assets\Scripts\WireTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Animations\_.txt" />
