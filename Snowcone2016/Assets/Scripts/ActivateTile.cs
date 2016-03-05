@@ -12,11 +12,6 @@ public class ActivateTile : MonoBehaviour {
         isActivate = false;
         tileSprite = gameObject.GetComponent<SpriteRenderer>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -27,11 +22,13 @@ public class ActivateTile : MonoBehaviour {
             if(isActivate)
             {
                 tileSprite.color = Color.red;
+				GetComponentInChildren<Light> ().color = new Color(0.8f,0.1f,0.1f);
                 gateToOpen.VerifyPuzzle();
             }
             else
             {
                 tileSprite.color = Color.blue;
+				GetComponentInChildren<Light> ().color = Color.blue;
             }
 
         }
