@@ -15,6 +15,7 @@ public enum Wires
 public class WireStats : MonoBehaviour {
 
     public bool isAWire;
+    public bool hasBeenPickedUp;
     public Wires currentWire;
 
 	// Use this for initialization
@@ -23,13 +24,17 @@ public class WireStats : MonoBehaviour {
         {
             currentWire = Wires.noWire;
         }
+        else
+        {
+            hasBeenPickedUp = false;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	}
 
-    public void setCurrentWire(Wires newCurrentWire)
+    public void SetCurrentWire(Wires newCurrentWire)
     {
         if (!isAWire)
         {
@@ -37,8 +42,13 @@ public class WireStats : MonoBehaviour {
         }
     }
 
-    public Wires getCurrentWire()
+    public Wires GetCurrentWire()
     {
         return currentWire;
+    }
+
+    public void setPickedUp(bool isIt)
+    {
+        hasBeenPickedUp = isIt;
     }
 }
