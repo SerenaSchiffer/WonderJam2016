@@ -1,5 +1,8 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+guid: 902407e6622554c4e9f6ddba86ddbf4f
+=======
+<<<<<<< HEAD
 guid: 034ff94d0807bd445b29a93d51c88903
 timeCreated: 1457147565
 =======
@@ -12,6 +15,7 @@ timeCreated: 1457146909
 >>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556
 >>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3
 licenseType: Free
+>>>>>>> b6dbbda18ad182db09f00b09fac0c6efdcbe3533
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -28,6 +32,9 @@ TextureImporter:
     convertToNormalMap: 0
     externalNormalMap: 0
 <<<<<<< HEAD
+    heightScale: .25
+=======
+<<<<<<< HEAD
     heightScale: 0.25
 =======
 <<<<<<< HEAD
@@ -36,11 +43,15 @@ TextureImporter:
     heightScale: 0.25
 >>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556
 >>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3
+>>>>>>> b6dbbda18ad182db09f00b09fac0c6efdcbe3533
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 8
+=======
 <<<<<<< HEAD
   cubemapConvolutionSteps: 7
 =======
@@ -50,13 +61,14 @@ TextureImporter:
   cubemapConvolutionSteps: 7
 >>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556
 >>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3
+>>>>>>> b6dbbda18ad182db09f00b09fac0c6efdcbe3533
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -69,6 +81,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
 <<<<<<< HEAD
+  spritePivot: {x: .5, y: .5}
+=======
+<<<<<<< HEAD
   spritePivot: {x: 0.5, y: 0.5}
 =======
 <<<<<<< HEAD
@@ -77,6 +92,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
 >>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556
 >>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3
+>>>>>>> b6dbbda18ad182db09f00b09fac0c6efdcbe3533
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -85,6 +101,8 @@ TextureImporter:
   spriteSheet:
     sprites: []
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     outline: []
 =======
 <<<<<<< HEAD
@@ -92,6 +110,7 @@ TextureImporter:
     outline: []
 >>>>>>> a97d9727d01131f8185e68f63e243ce6ec9f8556
 >>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3
+>>>>>>> b6dbbda18ad182db09f00b09fac0c6efdcbe3533
   spritePackingTag: 
   userData: 
   assetBundleName: 
