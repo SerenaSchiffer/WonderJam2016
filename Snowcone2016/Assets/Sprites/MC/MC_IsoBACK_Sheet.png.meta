@@ -1,5 +1,26 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 18a445c333845094a809bb1fde3c3883
+=======
+<<<<<<< HEAD
+guid: b0ca502fc1c25e34e9dac4e9e235545b
+timeCreated: 1457152594
+=======
+<<<<<<< HEAD
+guid: 2754220209467d44e901468c64b3c19c
+timeCreated: 1457150797
+=======
+<<<<<<< HEAD
+guid: 18a445c333845094a809bb1fde3c3883
+timeCreated: 1457150590
+=======
+guid: a38fc32fe7f0f0c4dbbd310eb3c1672c
+timeCreated: 1457152134
+>>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
+licenseType: Free
+>>>>>>> 6adbe225b3bf20f892eb6783f0c609dd732e2f35
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -16,12 +37,40 @@ TextureImporter:
     convertToNormalMap: 0
     externalNormalMap: 0
     heightScale: 0.25
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    heightScale: 0.25
+=======
+<<<<<<< HEAD
+    heightScale: 0.25
+=======
+    heightScale: .25
+>>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
+>>>>>>> 6adbe225b3bf20f892eb6783f0c609dd732e2f35
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
   cubemapConvolutionSteps: 7
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 7
+=======
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 7
+=======
+  cubemapConvolutionSteps: 8
+>>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
+>>>>>>> 6adbe225b3bf20f892eb6783f0c609dd732e2f35
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
@@ -41,6 +90,20 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  spritePivot: {x: 0.5, y: 0.5}
+=======
+<<<<<<< HEAD
+  spritePivot: {x: 0.5, y: 0.5}
+=======
+  spritePivot: {x: .5, y: .5}
+>>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
+>>>>>>> 6adbe225b3bf20f892eb6783f0c609dd732e2f35
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -49,6 +112,19 @@ TextureImporter:
   spriteSheet:
     sprites: []
     outline: []
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    outline: []
+=======
+<<<<<<< HEAD
+    outline: []
+=======
+>>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
+>>>>>>> 6adbe225b3bf20f892eb6783f0c609dd732e2f35
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -1,11 +1,21 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+guid: 622b49e846a16934a921c3cf02ff3435
+timeCreated: 1457152585
+=======
+<<<<<<< HEAD
+guid: b4d93cd9533a8974a9c1df9bdddeb1e9
+timeCreated: 1457150806
+=======
+<<<<<<< HEAD
 guid: 44ba3736624030948ac8b3181e3b4024
 timeCreated: 1457150591
 =======
 guid: 432f9a8b71fd5024bb8773c39ab7a534
 timeCreated: 1457152130
 >>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -25,8 +35,16 @@ TextureImporter:
 <<<<<<< HEAD
     heightScale: 0.25
 =======
+<<<<<<< HEAD
+    heightScale: 0.25
+=======
+<<<<<<< HEAD
+    heightScale: 0.25
+=======
     heightScale: .25
 >>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -35,8 +53,16 @@ TextureImporter:
 <<<<<<< HEAD
   cubemapConvolutionSteps: 7
 =======
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 7
+=======
+<<<<<<< HEAD
+  cubemapConvolutionSteps: 7
+=======
   cubemapConvolutionSteps: 8
 >>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
@@ -58,8 +84,16 @@ TextureImporter:
 <<<<<<< HEAD
   spritePivot: {x: 0.5, y: 0.5}
 =======
+<<<<<<< HEAD
+  spritePivot: {x: 0.5, y: 0.5}
+=======
+<<<<<<< HEAD
+  spritePivot: {x: 0.5, y: 0.5}
+=======
   spritePivot: {x: .5, y: .5}
 >>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -70,7 +104,15 @@ TextureImporter:
 <<<<<<< HEAD
     outline: []
 =======
+<<<<<<< HEAD
+    outline: []
+=======
+<<<<<<< HEAD
+    outline: []
+=======
 >>>>>>> 83f881a15bc3f727ecb192b4b15d61515e0aaf39
+>>>>>>> 14879fadde35cb2b420418984612ee25c028e280
+>>>>>>> 6666cefc4181e49f6e4c3bf696195f7b9bc4aa3c
   spritePackingTag: 
   userData: 
   assetBundleName: 

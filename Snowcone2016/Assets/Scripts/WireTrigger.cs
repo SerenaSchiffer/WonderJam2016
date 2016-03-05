@@ -6,6 +6,8 @@ public class WireTrigger : MonoBehaviour {
     public bool isInZone;
     private Collider2D lastColliderEntered;
     private Collider2D lastColliderEntered2;
+    private GameObject aWire;
+    private LineRenderer aLineRenderer;
 
     // Use this for initialization
     void Start() {
@@ -15,6 +17,12 @@ public class WireTrigger : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if(aLineRenderer != null)
+        {
+            aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,-5));
+        }
+
+
         if (!isInZone)
         {
             
@@ -57,10 +65,19 @@ public class WireTrigger : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                aWire = Instantiate(Resources.Load("Wire") as GameObject);
+                aLineRenderer = aWire.GetComponent<LineRenderer>();
+                aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered.transform.position.x, lastColliderEntered.transform.position.y,-5));
+                ChangeTypeOfLine();
                 lastColliderEntered.GetComponent<WireStats>().setPickedUp(true);
                 gameObject.GetComponent<WireStats>().SetCurrentWire(lastColliderEntered.GetComponent<WireStats>().GetCurrentWire());
             }
         }
+    }
+
+    void ChangeTypeOfLine()
+    {
+        Debug.Log("kek");
     }
 
     void PlugOnWire()
