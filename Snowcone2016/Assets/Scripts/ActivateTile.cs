@@ -12,11 +12,6 @@ public class ActivateTile : MonoBehaviour {
         isActivate = false;
         tileSprite = gameObject.GetComponent<SpriteRenderer>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
 
     void OnTriggerEnter2D(Collider2D other)
     {
