@@ -111,6 +111,7 @@ public class WireTrigger : MonoBehaviour {
                 }
                 aWire = Instantiate(Resources.Load("Wire") as GameObject);
                 aLineRenderer = aWire.GetComponent<LineRenderer>();
+                aLineRenderer.transform.Translate(0, 0, -9);
                 aLineRenderer.SetWidth(0.001f, 0.001f);
                 aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered.transform.position.x, lastColliderEntered.transform.position.y,-8));
                 lastColliderEntered.GetComponent<WireStats>().setPickedUp(true);
