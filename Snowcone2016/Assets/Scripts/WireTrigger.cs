@@ -5,6 +5,7 @@ public class WireTrigger : MonoBehaviour {
 
     public bool isInZone;
     private Collider2D lastColliderEntered;
+    private Collider2D lastColliderEntered2;
 
     // Use this for initialization
     void Start() {
@@ -14,12 +15,15 @@ public class WireTrigger : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(!isInZone)
+        if (!isInZone)
         {
-            lastColliderEntered = null;
+            
+            DropWire();
         }
+
         if (lastColliderEntered != null)
         {
+            lastColliderEntered2 = lastColliderEntered;
             Debug.Log("Je rentreeee");
             if (lastColliderEntered.tag == "WireZone")
             {
@@ -31,9 +35,8 @@ public class WireTrigger : MonoBehaviour {
                 Debug.Log("Je PLug");
                 PlugOnWire();
             }
-            
         }
-        DropWire();
+        lastColliderEntered = null;
     }
 
     void DropWire()
@@ -41,9 +44,11 @@ public class WireTrigger : MonoBehaviour {
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            gameObject.GetComponent<WireStats>().SetCurrentWire(Wires.noWire);
+            Debug.Log("Je Drop le fil");
+            gameObject.GetComponent<WireStats>().currentWire = Wires.noWire;
+            lastColliderEntered2.GetComponent<WireStats>().setPickedUp(false);
         }
-        lastColliderEntered.GetComponent<WireStats>().setPickedUp(false);
+        
     }
 
     void PickUpWire()
