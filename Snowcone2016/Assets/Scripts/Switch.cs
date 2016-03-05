@@ -5,6 +5,8 @@ public class Switch : MonoBehaviour {
 
     public bool isInZone;
     public bool isActive;
+	public bool isBridge = true;
+
 	// Use this for initialization
 	void Start () {
         isInZone = false;
@@ -12,10 +14,14 @@ public class Switch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
-        if(isActive && isInZone && Input.GetKey(KeyCode.Space))
+		
+		if(isActive && isInZone && Input.GetKeyDown(KeyCode.Space))
         {
-            gameObject.transform.GetChild(0).GetComponent<Bridge>().OpenBridge();
+			if (isBridge)
+				gameObject.transform.GetChild (0).GetComponent<Bridge> ().OpenBridge ();
+			else {
+				gameObject.transform.parent.GetChild (2).GetChild (0).GetComponent<Canon> ().Fire ();
+			}
         }
 	}
 
