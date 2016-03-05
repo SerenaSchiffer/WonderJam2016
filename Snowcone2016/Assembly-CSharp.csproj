@@ -48,8 +48,11 @@
      <Compile Include="Assets\Scripts\ActivateTile.cs" />
      <Compile Include="Assets\Scripts\BatteryLife.cs" />
      <Compile Include="Assets\Scripts\CameraZoom.cs" />
+<<<<<<< HEAD
+=======
      <Compile Include="Assets\Scripts\Canon.cs" />
      <Compile Include="Assets\Scripts\CanonProjectile.cs" />
+>>>>>>> 84636cad8bf337038df4f4497e75d2416f0394b3
      <Compile Include="Assets\Scripts\ElementBehavior.cs" />
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
      <Compile Include="Assets\Scripts\HoleScript.cs" />
