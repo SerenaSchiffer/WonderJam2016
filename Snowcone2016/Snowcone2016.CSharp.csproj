@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\ActivateTile.cs" />
     <Compile Include="Assets\Scripts\BatteryLife.cs" />
     <Compile Include="Assets\Scripts\CameraZoom.cs" />
+    <Compile Include="Assets\Scripts\Canon.cs" />
+    <Compile Include="Assets\Scripts\CanonProjectile.cs" />
     <Compile Include="Assets\Scripts\ElementBehavior.cs" />
     <Compile Include="Assets\Scripts\HeroMovement.cs" />
     <Compile Include="Assets\Scripts\HoleScript.cs" />
