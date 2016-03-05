@@ -101,7 +101,7 @@ public class WireTrigger : MonoBehaviour {
 
     void PickUpWire()
     {
-        if (lastColliderEntered.GetComponent<WireStats>().isAWire && !gameObject.GetComponent<WireStats>().isAWire)
+        if (lastColliderEntered.GetComponent<WireStats>().isAWire && !gameObject.GetComponent<WireStats>().isAWire && lastColliderEntered.GetComponent<WireStats>().hasBeenPickedUp == false)
         {
                 Debug.Log(lastColliderEntered.GetComponent<WireStats>().currentWire + " " + lastColliderEntered2.GetComponent<WireStats>().currentWire);
                 if (aLineRenderer != null && aLineRenderer.gameObject != null)
