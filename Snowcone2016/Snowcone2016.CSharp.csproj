@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ActivateGenerator.cs" />
     <Compile Include="Assets\Scripts\ActivateMagnet.cs" />
     <Compile Include="Assets\Scripts\ActivateSwitch.cs" />
     <Compile Include="Assets\Scripts\ActivateTile.cs" />
@@ -69,7 +70,9 @@
     <Compile Include="Assets\Scripts\Canon.cs" />
     <Compile Include="Assets\Scripts\CanonProjectile.cs" />
     <Compile Include="Assets\Scripts\CloseDrain.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\ElementBehavior.cs" />
+    <Compile Include="Assets\Scripts\Generator.cs" />
     <Compile Include="Assets\Scripts\HeroMovement.cs" />
     <Compile Include="Assets\Scripts\HoleScript.cs" />
     <Compile Include="Assets\Scripts\Magnet.cs" />
