@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
      <Compile Include="Assets\Scripts\HoleScript.cs" />
      <Compile Include="Assets\Scripts\Magnet.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\NextRoom.cs" />
      <Compile Include="Assets\Scripts\OpenGate.cs" />
      <Compile Include="Assets\Scripts\OrderInLayer.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\Scripts\PushBlock.cs" />
      <Compile Include="Assets\Scripts\Recharge_Batterie.cs" />
      <Compile Include="Assets\Scripts\SmokeScript.cs" />
+     <Compile Include="Assets\Scripts\SortingLayerBob.cs" />
      <Compile Include="Assets\Scripts\StopAtMagnet.cs" />
      <Compile Include="Assets\Scripts\StopSmoke.cs" />
      <Compile Include="Assets\Scripts\Switch.cs" />
