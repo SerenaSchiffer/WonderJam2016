@@ -16,6 +16,7 @@ public class StopSmoke : MonoBehaviour {
                 {
                     Debug.Log(item.name);
                     item.transform.GetChild(0).GetComponent<ParticleSystem>().enableEmission = false;
+                    Destroy(GameObject.FindGameObjectWithTag("fire"));
                 }
             }
             else

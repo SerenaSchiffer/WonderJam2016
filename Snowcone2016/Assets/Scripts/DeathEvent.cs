@@ -10,6 +10,7 @@ public class DeathEvent : StateMachineBehaviour {
         if (animator.gameObject.GetComponent<CheckPointHandler>().getLastCheckPoint() != null)
         {
             animator.gameObject.transform.position = animator.gameObject.GetComponent<CheckPointHandler>().getLastCheckPoint();
+            
         }
         Camera.main.GetComponent<CameraZoom>().centerCameraOnCharacter();
         animator.ResetTrigger("Dying");
