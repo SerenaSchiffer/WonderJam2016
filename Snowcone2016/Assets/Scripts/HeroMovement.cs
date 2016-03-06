@@ -8,6 +8,7 @@ public class HeroMovement : MonoBehaviour {
     private Vector3 ActualVecteur;
     private string lastTriggerName;
     private Animator heroAnimator;
+    public bool Ending;
 
 
 	public Sprite backSprite;
@@ -147,7 +148,10 @@ public class HeroMovement : MonoBehaviour {
     }
     void translateMainCameraOnAxis(float x,float y)
     {
-        Camera.main.transform.position = new Vector3(x, y,-10);
+        if (!Ending)
+        {
+            Camera.main.transform.position = new Vector3(x, y, -10);
+        }
     }
 
     //void translateMainCameraOnAxis(Vector3 positionVecteur)

@@ -6,6 +6,7 @@ public class WireConnectionEvent : MonoBehaviour {
     public bool isWall;
     public bool connected;
     public Wires typeOfConnection;
+    public Sprite plugIn;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,10 @@ public class WireConnectionEvent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    if(connected)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = plugIn;
+        }
 	}
 
     public void SetConnected(bool isIt)
