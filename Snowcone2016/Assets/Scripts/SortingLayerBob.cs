@@ -13,6 +13,7 @@ public class SortingLayerBob : MonoBehaviour {
     private SpriteRenderer shoulderRight;
     private SpriteRenderer neck;
     private SpriteRenderer head;
+    int sortingLayer = 0;
 
     void Start()
     {
@@ -32,17 +33,20 @@ public class SortingLayerBob : MonoBehaviour {
     void Update()
     {
         
-        int sortingLayer = (int)(transform.position.y * -100);
-        Debug.Log(boule.sortingOrder);
+        sortingLayer = (int)(transform.position.y * -100);
         boule.sortingOrder = sortingLayer;
-        chest.sortingOrder = sortingLayer - 3;
-        armLeft.sortingOrder = 2 + sortingLayer - 4;
-        handLeft.sortingOrder = 1 + sortingLayer - 2;
-        shoulderLeft.sortingOrder = 4 + sortingLayer - 8;
-        armRight.sortingOrder = 7 + sortingLayer - 14;
-        handRight.sortingOrder = 7 + sortingLayer - 14;
-        shoulderRight.sortingOrder = 8 + sortingLayer - 16;
-        neck.sortingOrder = 5 + sortingLayer - 10;
-        head.sortingOrder = 6 + sortingLayer - 12;
+        Debug.Log(chest.sortingOrder);
+        Debug.Log(sortingLayer);
+        chest.sortingOrder = (sortingLayer + 3);
+        armLeft.sortingOrder = sortingLayer + 2;
+        handLeft.sortingOrder = sortingLayer + 1;
+        shoulderLeft.sortingOrder = sortingLayer + 4;
+        armRight.sortingOrder = sortingLayer + 7;
+        handRight.sortingOrder = sortingLayer + 6;
+        shoulderRight.sortingOrder = sortingLayer + 8;
+        neck.sortingOrder =  sortingLayer + 5;
+        head.sortingOrder = sortingLayer + 6;
+
+        Debug.Log("I'm fast enough");
     }
 }
