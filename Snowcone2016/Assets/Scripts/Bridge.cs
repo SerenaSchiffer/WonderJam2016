@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Bridge : MonoBehaviour {
-    public bool isOpen; 
+    public bool isOpen;
+    public Sprite bridge;
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +18,9 @@ public class Bridge : MonoBehaviour {
     public void OpenBridge()
     {
         //SET ANIMATOR BRIDGE CORRECTLY
-
-        isOpen = true;
-        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.GetComponent<SpriteRenderer>().sprite = bridge;
+        Destroy(gameObject.GetComponent<HoleScript>());
+        gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
 
 
     }

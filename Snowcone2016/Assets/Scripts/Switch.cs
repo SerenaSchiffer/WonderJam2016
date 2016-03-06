@@ -6,6 +6,7 @@ public class Switch : MonoBehaviour {
     public bool isInZone;
     public bool isActive;
 	public bool isBridge = true;
+    public Sprite switchOn;
 
 	// Use this for initialization
 	void Start () {
@@ -17,11 +18,15 @@ public class Switch : MonoBehaviour {
 		
 		if(isActive && isInZone && Input.GetKeyDown(KeyCode.Space))
         {
-			if (isBridge)
-				gameObject.transform.GetChild (0).GetComponent<Bridge> ().OpenBridge ();
-			else {
-				gameObject.transform.parent.GetChild (2).GetChild (0).GetComponent<Canon> ().Fire ();
-			}
+            if (isBridge)
+            {
+                gameObject.transform.GetChild(0).GetComponent<Bridge>().OpenBridge();
+                gameObject.GetComponent<SpriteRenderer>().sprite = switchOn;
+            }
+            else
+            {
+                gameObject.transform.parent.GetChild(2).GetChild(0).GetComponent<Canon>().Fire();
+            }
         }
 	}
 
