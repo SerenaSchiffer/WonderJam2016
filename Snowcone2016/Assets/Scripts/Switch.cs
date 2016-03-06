@@ -66,6 +66,8 @@ public class Switch : MonoBehaviour {
 
     public void ActivateSwitch()
     {
+        GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("PlugMur");
+        Debug.Log("PULL LEVER");
         isActive = true;
     }
 }

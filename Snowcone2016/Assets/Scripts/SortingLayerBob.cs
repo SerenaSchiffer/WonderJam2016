@@ -35,8 +35,6 @@ public class SortingLayerBob : MonoBehaviour {
         
         sortingLayer = (int)(transform.position.y * -100);
         boule.sortingOrder = sortingLayer;
-        Debug.Log(chest.sortingOrder);
-        Debug.Log(sortingLayer);
         chest.sortingOrder = (sortingLayer + 3);
         armLeft.sortingOrder = sortingLayer + 2;
         handLeft.sortingOrder = sortingLayer + 1;
@@ -46,7 +44,5 @@ public class SortingLayerBob : MonoBehaviour {
         shoulderRight.sortingOrder = sortingLayer + 8;
         neck.sortingOrder =  sortingLayer + 5;
         head.sortingOrder = sortingLayer + 6;
-
-        Debug.Log("I'm fast enough");
     }
 }

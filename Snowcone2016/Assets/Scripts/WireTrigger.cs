@@ -20,7 +20,7 @@ public class WireTrigger : MonoBehaviour {
     {
         if(aLineRenderer != null)
         {
-            aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,-8));
+            aLineRenderer.SetPosition(0, new Vector3(GameObject.Find("HandRight").transform.position.x, GameObject.Find("HandRight").transform.position.y,-8));
             //aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -5));
             //aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered2.transform.position.x, lastColliderEntered2.transform.position.y, -5));
         }
@@ -56,10 +56,8 @@ public class WireTrigger : MonoBehaviour {
                     Destroy(aLineRenderer.gameObject);
                     aLineRenderer = null;
                 }
-                Debug.Log("Je Pick up");
                 if (isInZone && Input.GetKeyDown(KeyCode.Space))
                 {
-                    Debug.Log("Bitches");
                     PickUpWire();
                 }
             }
@@ -109,7 +107,8 @@ public class WireTrigger : MonoBehaviour {
                     lastColliderEntered2.GetComponent<WireStats>().setPickedUp(false);
                     Destroy(aLineRenderer.gameObject);
                 }
-                aWire = Instantiate(Resources.Load("Wire") as GameObject);
+            GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("Plug");
+            aWire = Instantiate(Resources.Load("Wire") as GameObject);
                 aLineRenderer = aWire.GetComponent<LineRenderer>();
                 aLineRenderer.sortingLayerName = "Wire"; 
                 aLineRenderer.transform.Translate(0, 0, -9);

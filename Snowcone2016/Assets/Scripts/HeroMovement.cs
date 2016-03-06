@@ -68,11 +68,14 @@ public class HeroMovement : MonoBehaviour {
                 {
                     heroAnimator.ResetTrigger(lastTriggerName);
                 }
+                //En haut a droite
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetBool("IsFront", false);
+
 
                 heroAnimator.SetTrigger("LookRight");
                 lastTriggerName = "LookRight";
                 heroAnimator.SetBool("Moving", true);
-                gameObject.transform.localScale = new Vector3((ActualVecteur.x) * -1, ActualVecteur.y, ActualVecteur.z);
+                gameObject.transform.localScale = new Vector3((ActualVecteur.x), ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime);
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
             }
@@ -84,6 +87,10 @@ public class HeroMovement : MonoBehaviour {
                     heroAnimator.ResetTrigger(lastTriggerName);
                 }
                 //left
+                //En bas a gauche
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetBool("IsFront", true);
+
+
                 heroAnimator.SetTrigger("LookLeft");
                 lastTriggerName = "LookLeft";
                 heroAnimator.SetBool("Moving", true);
@@ -100,10 +107,14 @@ public class HeroMovement : MonoBehaviour {
                 }
 
                 //left
+
+                //En haut a gauche
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetBool("IsFront", false);
+
                 heroAnimator.SetTrigger("LookLeft");
                 lastTriggerName = "LookLeft";
                 heroAnimator.SetBool("Moving", true);
-                gameObject.transform.localScale = new Vector3(ActualVecteur.x, ActualVecteur.y, ActualVecteur.z);
+                gameObject.transform.localScale = new Vector3(ActualVecteur.x*-1, ActualVecteur.y, ActualVecteur.z);
                 heroRidigBody2d.velocity = new Vector2(-1 * speed * Time.deltaTime, 0.5f * speed * Time.deltaTime);
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
 
@@ -116,6 +127,11 @@ public class HeroMovement : MonoBehaviour {
                     heroAnimator.ResetTrigger(lastTriggerName);
                 }
                 //right
+                //En bas a droite
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetBool("IsFront", true);
+                Debug.Log("EN HAUT DROITE");
+
+
                 heroAnimator.SetTrigger("LookRight");
                 lastTriggerName = "LookRight";
                 heroAnimator.SetBool("Moving", true);
