@@ -56,10 +56,8 @@ public class WireTrigger : MonoBehaviour {
                     Destroy(aLineRenderer.gameObject);
                     aLineRenderer = null;
                 }
-                Debug.Log("Je Pick up");
                 if (isInZone && Input.GetKeyDown(KeyCode.Space))
                 {
-                    Debug.Log("Bitches");
                     PickUpWire();
                 }
             }
@@ -109,7 +107,8 @@ public class WireTrigger : MonoBehaviour {
                     lastColliderEntered2.GetComponent<WireStats>().setPickedUp(false);
                     Destroy(aLineRenderer.gameObject);
                 }
-                aWire = Instantiate(Resources.Load("Wire") as GameObject);
+            GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("Plug");
+            aWire = Instantiate(Resources.Load("Wire") as GameObject);
                 aLineRenderer = aWire.GetComponent<LineRenderer>();
                 aLineRenderer.sortingLayerName = "Wire"; 
                 aLineRenderer.transform.Translate(0, 0, -9);

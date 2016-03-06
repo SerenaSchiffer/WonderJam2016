@@ -27,8 +27,8 @@ public class HoleScript : MonoBehaviour {
 
             if (other.tag == "character")
             {
-                GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetTrigger("Dying");
-                GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetBool("Dead", true);
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("Dying");
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetBool("Dead", true);
             }
             //Destroy (other.gameObject);
         }
