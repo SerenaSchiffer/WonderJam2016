@@ -20,6 +20,8 @@ public class CheckPointHandler : MonoBehaviour {
         {
             Debug.Log("Gotcha");
             LastCheckPoint = col.transform.position;
+            GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetBool("Dead", false);
+            gameObject.GetComponent<BatteryLife>().RefillBattery();
         }
     }
 
