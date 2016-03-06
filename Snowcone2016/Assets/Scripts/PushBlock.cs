@@ -33,18 +33,18 @@ public class PushBlock : MonoBehaviour {
 	void MoveBlock(int hor, int ver)
 	{
 		
-		if (hor != 0) {
-			if (hor == 1)
+		if (ver != 0) {
+			if (ver == 1)
 				transform.Translate(new Vector2 (0.757f, 0.356f));
 			else
 				transform.Translate(new Vector2 (-0.757f, -0.356f));
 		}
 		else 
 		{
-			if (ver == 1)
-				transform.Translate (new Vector2 (-0.757f, 0.356f));
-			else
+			if (hor == 1)
 				transform.Translate (new Vector2 (0.757f, -0.356f));
+			else
+				transform.Translate (new Vector2 (-0.757f, 0.356f));
 		}
 	}
 }
