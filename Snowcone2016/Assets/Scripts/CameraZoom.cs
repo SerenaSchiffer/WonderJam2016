@@ -7,7 +7,7 @@ public class CameraZoom : MonoBehaviour {
     public float maxFOV = 15f;
     public float zoomSpeed = 1f;
 
-    public float cameraSize = 9f;
+    public float cameraSize;
 	// Use this for initialization
 	void Start () {
         Camera.main.orthographicSize = cameraSize;
