@@ -27,6 +27,7 @@ public class Switch : MonoBehaviour {
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = switchOff;
             isPull = false;
+                
         }
 		if(isActive && isInZone && Input.GetKeyDown(KeyCode.Space))
         {
