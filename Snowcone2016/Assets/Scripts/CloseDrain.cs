@@ -2,14 +2,6 @@
 using System.Collections;
 
 public class CloseDrain : MonoBehaviour {
-
-<<<<<<< HEAD
-	// Use this for initialization
-	void Start () {
-	    //Close drain and destroy water
-
-	}
-=======
     GameObject water;
     SpriteRenderer sr;
     float transp;
@@ -20,7 +12,6 @@ public class CloseDrain : MonoBehaviour {
         sr = water.GetComponent<SpriteRenderer>();
         transp = 1f;
     }
->>>>>>> eb58e9bf45649cd41c74ffb0c3058adbaee262c2
 	
 	// Update is called once per frame
 	void Update () {
