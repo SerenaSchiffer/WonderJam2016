@@ -60,7 +60,7 @@ public class HeroMovement : MonoBehaviour {
 
         
             
-            if (Input.GetAxisRaw("Horizontal") == 1)
+            if (Input.GetAxisRaw("Vertical") == 1)
             {
                 //right
 
@@ -80,7 +80,7 @@ public class HeroMovement : MonoBehaviour {
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
             }
 
-            else if (Input.GetAxisRaw("Horizontal") == -1)
+            else if (Input.GetAxisRaw("Vertical") == -1)
             {
                 if (lastTriggerName != "LookLeft")
                 {
@@ -99,7 +99,7 @@ public class HeroMovement : MonoBehaviour {
                 translateMainCameraOnAxis(gameObject.transform.position.x, gameObject.transform.position.y);
             }
 
-            else if (Input.GetAxisRaw("Vertical") == 1)
+            else if (Input.GetAxisRaw("Horizontal") == -1)
             {
                 if (lastTriggerName != "LookLeft")
                 {
@@ -120,7 +120,7 @@ public class HeroMovement : MonoBehaviour {
 
             }
 
-            else if (Input.GetAxisRaw("Vertical") == -1)
+            else if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 if (lastTriggerName != "LookRight")
                 {
