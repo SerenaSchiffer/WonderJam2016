@@ -34,7 +34,9 @@ public class Canon : MonoBehaviour {
 
 	public void Fire()
 	{
-		GameObject projec = Instantiate (proj, new Vector2(transform.position.x + 0.5f, transform.position.y + 0.25f), Quaternion.identity) as GameObject;
+        Debug.Log("PLAY THE SOUND");
+        gameObject.GetComponent<AudioSource>().Play();
+        GameObject projec = Instantiate (proj, new Vector2(transform.position.x + 0.5f, transform.position.y + 0.25f), Quaternion.identity) as GameObject;
 		projec.GetComponent<CanonProjectile> ().target = vase;
 	}
 }
