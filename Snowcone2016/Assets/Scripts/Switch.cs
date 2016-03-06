@@ -34,6 +34,8 @@ public class Switch : MonoBehaviour {
             gameObject.GetComponent<SpriteRenderer>().sprite = switchOn;
             if (isBridge)
             {
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("PlugMur");
+                Debug.Log("PULL LEVER");
                 gameObject.transform.GetChild(0).GetComponent<Bridge>().OpenBridge();
                 isPull = true;
                 cptSwitch = 10;
@@ -66,8 +68,7 @@ public class Switch : MonoBehaviour {
 
     public void ActivateSwitch()
     {
-        GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("PlugMur");
-        Debug.Log("PULL LEVER");
+        
         isActive = true;
     }
 }

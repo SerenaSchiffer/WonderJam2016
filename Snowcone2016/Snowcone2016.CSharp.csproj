@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\TitleScreen.cs" />
     <Compile Include="Assets\Scripts\UI_Buttons.cs" />
+    <Compile Include="Assets\Scripts\UI_Buttons2.cs" />
     <Compile Include="Assets\Scripts\WireConnectionEvent.cs" />
     <Compile Include="Assets\Scripts\WireStats.cs" />
     <Compile Include="Assets\Scripts\WireTrigger.cs" />
