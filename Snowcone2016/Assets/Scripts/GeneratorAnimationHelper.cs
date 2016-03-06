@@ -7,4 +7,9 @@ public class GeneratorAnimationHelper : MonoBehaviour {
 	{
 		GameObject.Find ("Bob 1").GetComponent<SpriteRenderer> ().enabled = true;
 	}
+
+	public void PlsHelp2()
+	{
+		gameObject.GetComponent<AudioSource> ().Play ();
+	}
 }
