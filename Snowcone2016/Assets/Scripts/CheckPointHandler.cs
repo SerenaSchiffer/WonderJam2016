@@ -22,7 +22,7 @@ public class CheckPointHandler : MonoBehaviour {
             Debug.Log("Gotcha");
             LastCheckPoint = col.transform.position;
             GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetBool("Dead", false);
-            GameObject.FindGameObjectWithTag("character").GetComponent<WireTrigger>().DropWire();
+            GameObject.FindGameObjectWithTag("character").GetComponent<WireTrigger>().DropWire(true);
             gameObject.GetComponent<BatteryLife>().RefillBattery();
         }
     }
