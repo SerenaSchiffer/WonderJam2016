@@ -3,6 +3,7 @@ using System.Collections;
 
 public class WireConnectionEvent : MonoBehaviour {
 
+    public bool isWall;
     public bool connected;
     public Wires typeOfConnection;
 
