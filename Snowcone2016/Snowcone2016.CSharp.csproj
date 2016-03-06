@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\OrderInLayerStatic.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PushBlock.cs" />
+    <Compile Include="Assets\Scripts\Recharge_Batterie.cs" />
     <Compile Include="Assets\Scripts\SmokeScript.cs" />
     <Compile Include="Assets\Scripts\StopAtMagnet.cs" />
     <Compile Include="Assets\Scripts\StopSmoke.cs" />
