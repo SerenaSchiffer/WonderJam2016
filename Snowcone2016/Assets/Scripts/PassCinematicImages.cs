@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class PassCinematicImages : MonoBehaviour {
-
+	public bool kek = false;
     int cpt = 0;
     Transform[] lesImages;
     public GameObject imagesContainer;
@@ -66,9 +66,9 @@ public class PassCinematicImages : MonoBehaviour {
         cpt++;
         }
 
-        if (Input.anyKey)
+		if (kek && Input.anyKey)
         {
-            Debug.Log("kek");
+			SceneManager.LoadScene (0);
         }
 	}
 }

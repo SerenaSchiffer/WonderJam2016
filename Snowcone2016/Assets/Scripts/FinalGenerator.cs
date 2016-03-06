@@ -19,7 +19,7 @@ public class FinalGenerator : MonoBehaviour {
 			timeToLive++;
 			GameObject.Find ("KekLight").GetComponent<Light> ().intensity = (float)timeToLive / 100f;
 			if (timeToLive == 800) {
-				SceneManager.LoadScene (0);
+				SceneManager.LoadScene (7);
 			}
         }
 	}
