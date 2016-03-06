@@ -6,8 +6,9 @@ public class CheckPointHandler : MonoBehaviour {
     Vector3 LastCheckPoint;
 	// Use this for initialization
 	void Start () {
-	
-	}
+        LastCheckPoint = new Vector3(15.24f, -0.5f);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
