@@ -1,33 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PushBlock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Generator.cs">
     <Files>
-      <File FileName="Assets\Sprites\SLAM_Animation.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ActivateTile.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TitleScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UI_Buttons.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BatteryLife.cs" Line="1" Column="1" />
-<<<<<<< HEAD
-      <File FileName="Assets\Scripts\PushBlock.cs" Line="32" Column="3" />
-      <File FileName="Assets\Scripts\HeroMovement.cs" Line="119" Column="52" />
-=======
-      <File FileName="Assets\Scripts\PushBlock.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\HeroMovement.cs" Line="1" Column="1" />
->>>>>>> 19ff23c94569b78bcba657f6b0aad492d4f6d157
-      <File FileName="Assets\Scripts\HoleScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Canon.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\OrderInLayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CloseDrain.cs" Line="1" Column="1" />
-<<<<<<< HEAD
-      <File FileName="Assets\Scripts\OpenGate.cs" Line="37" Column="78" />
-      <File FileName="Assets\Scripts\WireTrigger.cs" Line="76" Column="1" />
-      <File FileName="Assets\Scripts\WireConnectionEvent.cs" Line="40" Column="26" />
-      <File FileName="Assets\Scripts\Switch.cs" Line="18" Column="46" />
-      <File FileName="Assets\Scripts\CanonProjectile.cs" Line="9" Column="2" />
-=======
-      <File FileName="Assets\Scripts\OpenGate.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WireTrigger.cs" Line="1" Column="1" />
->>>>>>> 19ff23c94569b78bcba657f6b0aad492d4f6d157
+      <File FileName="Assets\Scripts\UI_Buttons.cs" Line="4" Column="7" />
+      <File FileName="Assets\Scripts\NextRoom.cs" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\DeathEvent.cs" Line="12" Column="40" />
+      <File FileName="Assets\Scripts\Generator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

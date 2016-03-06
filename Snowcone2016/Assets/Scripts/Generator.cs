@@ -17,6 +17,8 @@ public class Generator : MonoBehaviour {
     public void ActivateGenerator()
     {
         isActive = true;
+		GetComponentInChildren<Animator> ().SetTrigger ("plug_head");
+		GameObject.Find ("Bob 1").GetComponent<SpriteRenderer> ().enabled = false;
         gameObject.transform.GetChild(0).GetComponent<Door>().OpenDoor();
     }
 }
