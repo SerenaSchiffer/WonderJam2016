@@ -7,7 +7,10 @@ public class DeathEvent : StateMachineBehaviour {
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Debug.Log("Teleport");
-        animator.gameObject.transform.position = animator.gameObject.GetComponent<CheckPointHandler>().getLastCheckPoint();
+        if (animator.gameObject.GetComponent<CheckPointHandler>().getLastCheckPoint() != null)
+        {
+            animator.gameObject.transform.position = animator.gameObject.GetComponent<CheckPointHandler>().getLastCheckPoint();
+        }
         Camera.main.GetComponent<CameraZoom>().centerCameraOnCharacter();
         animator.ResetTrigger("Dying");
         animator.SetBool("Dead", false);

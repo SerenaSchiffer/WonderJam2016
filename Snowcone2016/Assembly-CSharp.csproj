@@ -60,9 +60,11 @@
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\ElementBehavior.cs" />
      <Compile Include="Assets\Scripts\Generator.cs" />
+     <Compile Include="Assets\Scripts\GeneratorAnimationHelper.cs" />
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
      <Compile Include="Assets\Scripts\HoleScript.cs" />
      <Compile Include="Assets\Scripts\Magnet.cs" />
+     <Compile Include="Assets\Scripts\NextRoom.cs" />
      <Compile Include="Assets\Scripts\OpenGate.cs" />
      <Compile Include="Assets\Scripts\OrderInLayer.cs" />
      <Compile Include="Assets\Scripts\OrderInLayerStatic.cs" />

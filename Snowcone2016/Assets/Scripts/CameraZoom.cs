@@ -11,8 +11,10 @@ public class CameraZoom : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Camera.main.orthographicSize = cameraSize;
-        
-	}
+        centerCameraOnCharacter();
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
