@@ -39,6 +39,6 @@ public class BatteryLife : MonoBehaviour {
 
     public void RefillBattery()
     {
-        timer = 60;
+		timer = maxTimer;
     }
 }
