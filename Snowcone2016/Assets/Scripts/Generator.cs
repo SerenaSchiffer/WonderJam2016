@@ -18,7 +18,11 @@ public class Generator : MonoBehaviour {
     {
         isActive = true;
 		GetComponentInChildren<Animator> ().SetTrigger ("plug_head");
-		GameObject.Find ("Bob 1").GetComponent<SpriteRenderer> ().enabled = false;
+        foreach (SpriteRenderer sprite in GameObject.Find("Bob 1").GetComponentsInChildren<SpriteRenderer>())
+        {
+            sprite.enabled = false;
+        }
+        //GameObject.Find ("Bob 1").GetComponent<SpriteRenderer> ().enabled = false;
         gameObject.transform.GetChild(0).GetComponent<Door>().OpenDoor();
     }
 }
