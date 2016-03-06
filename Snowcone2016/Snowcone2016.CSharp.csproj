@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\PushBlock.cs" />
     <Compile Include="Assets\Scripts\Recharge_Batterie.cs" />
     <Compile Include="Assets\Scripts\SmokeScript.cs" />
+    <Compile Include="Assets\Scripts\SortingLayerBob.cs" />
     <Compile Include="Assets\Scripts\StopAtMagnet.cs" />
     <Compile Include="Assets\Scripts\StopSmoke.cs" />
     <Compile Include="Assets\Scripts\Switch.cs" />
