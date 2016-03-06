@@ -4,12 +4,19 @@ using System.Collections;
 public class OpenGate : MonoBehaviour {
 
     GameObject[] tableTile;
+    GameObject[] tableTile2;
+    public bool Got2Puzzle;
     bool puzzleCompleted;
     public Sprite OpenDoorDroite;
     public Sprite OpenDoorFondDroite;
     // Use this for initialization
     void Start () {
         tableTile = GameObject.FindGameObjectsWithTag("ActivableTile");
+        if(Got2Puzzle)
+        {
+            tableTile2 = GameObject.FindGameObjectsWithTag("ActivableTile2");
+        }
+
 	}
 	
 	// Update is called once per frame
@@ -17,15 +24,29 @@ public class OpenGate : MonoBehaviour {
 	
 	}
 
-    public void VerifyPuzzle()
+    public void VerifyPuzzle(int rank)
     {
         puzzleCompleted = true;
-        foreach(GameObject tile in tableTile)
+        if (rank == 1)
         {
-            if(!tile.GetComponent<ActivateTile>().isActivate)
+            foreach (GameObject tile in tableTile)
             {
-                puzzleCompleted = false;
-                break;
+                if (!tile.GetComponent<ActivateTile>().isActivate)
+                {
+                    puzzleCompleted = false;
+                    break;
+                }
+            }
+        }
+        else if (rank == 2)
+        {
+            foreach (GameObject tile in tableTile2)
+            {
+                if (!tile.GetComponent<ActivateTile>().isActivate)
+                {
+                    puzzleCompleted = false;
+                    break;
+                }
             }
         }
 

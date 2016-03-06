@@ -16,6 +16,15 @@ public class HoleScript : MonoBehaviour {
                 gameObject.transform.localScale = new Vector3(0.07170061f, 0.07170061f, 0);
                 Destroy(other.gameObject);
             }
+
+            if(other.gameObject.tag == "metalBlock")
+            {
+                isFilled = true;
+                gameObject.GetComponent<SpriteRenderer>().sprite = filled;
+                gameObject.transform.localScale = new Vector3(0.1364248f, 0.1364248f, 0);
+                Destroy(other.gameObject);
+            }
+
             if (other.tag == "character")
             {
                 GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetTrigger("Dying");
