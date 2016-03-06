@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\DeathEvent.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\ElementBehavior.cs" />
+     <Compile Include="Assets\Scripts\FinalGenerator.cs" />
      <Compile Include="Assets\Scripts\Generator.cs" />
      <Compile Include="Assets\Scripts\GeneratorAnimationHelper.cs" />
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
