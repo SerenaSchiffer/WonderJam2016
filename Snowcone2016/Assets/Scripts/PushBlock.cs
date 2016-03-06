@@ -12,6 +12,8 @@ public class PushBlock : MonoBehaviour {
 
 	void OnCollisionStay2D()
 	{
+        GameObject.Find("Bob 1").GetComponent<Animator>().SetBool("Push", true);
+        Debug.Log("PUSH");
 		if (Input.GetAxisRaw ("Horizontal") != 0 || Input.GetAxisRaw ("Vertical") != 0)
 		{
 			pushDelay--;
@@ -24,7 +26,8 @@ public class PushBlock : MonoBehaviour {
 
 	void OnCollisionExit2D()
 	{
-		pushDelay = 60;
+        GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetBool("Push", false);
+        pushDelay = 60;
 	}
 
 	void MoveBlock(int hor, int ver)

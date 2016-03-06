@@ -23,9 +23,19 @@ public class WireConnectionEvent : MonoBehaviour {
 
     public void SetConnected(bool isIt)
     {
+        
         connected = isIt;
         if(connected)
         {
+            if (!isWall)
+            {
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("Plug");
+            }
+            else
+            {
+                GameObject.Find("Bob 1").GetComponent<Animator>().SetTrigger("PlugMur");
+            }
+            Debug.Log(GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().gameObject.name);
             ActivateChildObjects();
         }
     }
