@@ -20,7 +20,7 @@ public class WireTrigger : MonoBehaviour {
     {
         if(aLineRenderer != null)
         {
-            aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,-8));
+            aLineRenderer.SetPosition(0, new Vector3(GameObject.Find("HandRight").transform.position.x, GameObject.Find("HandRight").transform.position.y,-8));
             //aLineRenderer.SetPosition(0, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -5));
             //aLineRenderer.SetPosition(1, new Vector3(lastColliderEntered2.transform.position.x, lastColliderEntered2.transform.position.y, -5));
         }
