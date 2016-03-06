@@ -83,10 +83,10 @@ public class WireTrigger : MonoBehaviour {
         //lastColliderEntered = null;
     }
 
-    void DropWire()
+    public void DropWire(bool noKeyNeeded = false)
     {
         
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || noKeyNeeded)
         {
             if (gameObject.GetComponent<WireStats>().currentWire != Wires.noWire && aLineRenderer != null && aLineRenderer.gameObject != null)
             {

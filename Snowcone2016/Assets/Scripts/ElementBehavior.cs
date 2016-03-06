@@ -13,13 +13,16 @@ public class ElementBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (character.gameObject.GetComponent<WireStats>().currentWire == WirePermitted &&  gameObject.GetComponent<Collider2D>().isTrigger == false)
-        {
-            gameObject.GetComponent<Collider2D>().isTrigger = true;
-        }
-        else if(gameObject.GetComponent<Collider2D>().isTrigger == true && character.GetComponent<WireStats>().currentWire != WirePermitted)
-        {
-            gameObject.GetComponent<Collider2D>().isTrigger = false;
-        }
+        
 	}
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "character")
+        {if (character.GetComponent<WireStats>().currentWire != WirePermitted)
+            {
+                character.GetComponent<WireTrigger>().DropWire(true);
+            }
+        }
+    }
 }
