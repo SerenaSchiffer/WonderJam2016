@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UI_Buttons : MonoBehaviour {
 	public void StartGame()
 	{
-		SceneManager.LoadScene (1);
+		SceneManager.LoadScene (6);
 	}
 
 	public void QuitGame()
