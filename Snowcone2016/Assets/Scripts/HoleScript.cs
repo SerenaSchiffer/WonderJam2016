@@ -10,7 +10,9 @@ public class HoleScript : MonoBehaviour {
 		if (!isFilled) {
 			if(other.gameObject.tag == "block")
 				isFilled = true;
-			Destroy (other.gameObject);
-		}
+            GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetTrigger("Dying");
+            GameObject.FindGameObjectWithTag("character").GetComponent<Animator>().SetBool("Dead",true);
+            //Destroy (other.gameObject);
+        }
 	}
 }

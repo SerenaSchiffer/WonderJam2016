@@ -131,6 +131,10 @@ public class HeroMovement : MonoBehaviour {
             }
 
         }
+        else
+        {
+            heroRidigBody2d.velocity = new Vector2(0,0);
+        }
     }
     void translateMainCameraOnAxis(float x,float y)
     {
