@@ -54,7 +54,9 @@
      <Compile Include="Assets\Scripts\CameraZoom.cs" />
      <Compile Include="Assets\Scripts\Canon.cs" />
      <Compile Include="Assets\Scripts\CanonProjectile.cs" />
+     <Compile Include="Assets\Scripts\CheckPointHandler.cs" />
      <Compile Include="Assets\Scripts\CloseDrain.cs" />
+     <Compile Include="Assets\Scripts\DeathEvent.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\ElementBehavior.cs" />
      <Compile Include="Assets\Scripts\Generator.cs" />
