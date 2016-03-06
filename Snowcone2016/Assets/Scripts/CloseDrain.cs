@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class CloseDrain : MonoBehaviour {
-
     GameObject water;
     // Use this for initialization
     void Start () {
