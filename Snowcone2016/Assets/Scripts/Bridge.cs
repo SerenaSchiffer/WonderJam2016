@@ -17,10 +17,7 @@ public class Bridge : MonoBehaviour {
 
     public void OpenBridge()
     {
-        //SET ANIMATOR BRIDGE CORRECTLY
-        gameObject.GetComponent<SpriteRenderer>().sprite = bridge;
-        Destroy(gameObject.GetComponent<HoleScript>());
-        gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+        Destroy(gameObject);
 
 
     }
